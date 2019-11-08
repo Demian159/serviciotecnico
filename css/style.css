@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 .fondo-header{
   background-image: url("../img/mosaico-gloss-naranja.jpg");
 }
