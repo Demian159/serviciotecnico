@@ -3,8 +3,11 @@
 <head>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contacto.css">
+  <script type="text/javascript" src="js/validacion.js">  </script>
   <meta charset="utf-8">
-  <title>ServTecn</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto</title>
 </head>
 <body id="contacto">
   <div class="container-fluid">
@@ -17,24 +20,32 @@
           <div class="align-middle">
             <h2>Consultas</h2>
           </div>
-          <input class="col-8" type="name" name="Nombre" value="" placeholder="Ingrese su nombre aquí...">
-          <input class="col-8" type="email" name="Email" value="" placeholder="Ingrese su e-mail aquí...">
-          <input class="col-8" type="tel" name="Telefono" value="" placeholder="Ingresu su telefono aquí...">
-          <textarea name="Consulta" rows="8" cols="80" placeholder="Ingrese su consulta aquí..."></textarea>
-          <button type="submit" class="btn-lg btn-primary" name="button">Enviar</button>
+          <div class="">
+          <input required class="col-12" type="name" name="Nombre" value="" placeholder="Ingrese su nombre aquí...">
+          <br><br>
+          <input required class="col-12" type="name" name="Apellido" value="" placeholder="Ingrese su apellido aquí...">
+          <br><br>
+          <input required class="col-12" type="email" name="Email" value="" placeholder="Ingrese su e-mail aquí...">
+          <br><br>
+          <input required class="col-12" type="tel" name="Telefono" value="" placeholder="Ingresu su telefono aquí...">
+          <br><br>
+          <textarea name="Consulta" rows="8" class="col-12" placeholder="Ingrese su consulta aquí..."></textarea>
+          <br><br>
         </div>
-        <div class="informacion col-12">
-          <div class="align-middle">
+          <button type="submit" class="btn-lg btn-primary" name="button">Enviar</button>
+          <br><br>
+        </div>
+        <div class="informacion col-12 ">
+          <div class="text-center">
             <h2> Información </h2>
           </div>
-          <h3>Dirección</h3>
-          <p>Av. Belgrano 1193, M5500CCB Mendoza</p>
-          <p>Ciudad de Mendoza</p>
+          <p>Dirección: Av. Belgrano 1193, Ciudad de Mendoza</p>
           <p>Telefono: <a href="call:11133456">11133456</a> </p>
           <p>E-mail: <a href="email:coso@gmail.com">coso@gmail.com</a> </p>
-          <div class="map-google">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1675.19776902906!2d-68.85065424176804!3d-32.88770899523461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0903818ffd51%3A0x51eec3b607614e5f!2sAv.%20Belgrano%201193%2C%20M5500CBA%20Mendoza!5e0!3m2!1ses-419!2sar!4v1573238709308!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          <div class="map-google col-12 align-content-center" style="margin: 0px; padding: 0px;">
+            <iframe height="250em"style="margin: 0px; padding: 0px;" class= "col-12"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1675.19776902906!2d-68.85065424176804!3d-32.88770899523461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0903818ffd51%3A0x51eec3b607614e5f!2sAv.%20Belgrano%201193%2C%20M5500CBA%20Mendoza!5e0!3m2!1ses-419!2sar!4v1573238709308!5m2!1ses-419!2sar"  frameborder="0" style="border:0;" allowfullscreen=""></iframe>
           </div>
+          <br><br><br><br>
         </div>
 
       </form>
