@@ -1,3 +1,7 @@
+body{
+  margin: 0;
+  padding: 0;
+}
 *{
   box-sizing: border-box;
   font-family: 'Quicksand', sans-serif;
@@ -5,8 +9,30 @@
   font-family: 'Orbitron', sans-serif;
 }
 .fondo-header{
-  background-image: url("../img/mosaico-gloss-naranja.jpg");
+  background-image: url('../img/mosaico-gloss-naranja.jpg');
+  opacity: 80%;
 }
-.logo-header {
-  background-image:url("../img/logo.jpg");
+.menu{
+  font-family: 'Orbitron', sans-serif;
+}
+text-uppercase{
+  /* display: none; */
+  text-transform: uppercase;
+
+}
+.img-fluid{
+  border-radius: 90px;
+  border: 5px solid #000;
+  display: block;
+  margin: auto;
+  width: 30%;
+}
+#perfil{
+  display:none;
+}
+#login{
+  display:none;
+}
+#carrito{
+  display: none;
 }
