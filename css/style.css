@@ -15,6 +15,9 @@ body{
 .menu{
   font-family: 'Orbitron', sans-serif;
 }
+h1{
+  text-align: center;
+}
 text-uppercase{
   /* display: none; */
   text-transform: uppercase;
