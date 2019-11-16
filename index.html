@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Orbitron%7CPlay%7CQuicksand&display=swap" rel="stylesheet">
-    <title>ServTecn</title>
-  </head>
-  <body>
-    <div class="container-fluid">
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron%7CPlay%7CQuicksand&display=swap" rel="stylesheet">
+  <title>ServTecn</title>
+</head>
+<body>
+  <div class="container-fluid">
 
-    <header class=" fondo-header">
+    <header class="fondo-header">
 
       <div class="logo-container">
         <img src="img/logo.png" class="img-fluid" alt="Responsive image">
@@ -18,7 +19,7 @@
 
       </div>
       <nav class="navbar navbar-expand-lg row d-flex align-items-center justify-content-between">
-        <a class="navbar-brand azul" href="#"><h1 class= "text-uppercase">DH <br>Servicio Tecnico</h1></a>
+        <a class="navbar-brand col-12" href="#"><h1 class= "text-uppercase">DH <br>Servicio Tecnico</h1></a>
         <button class="navbar-toggler verde align-items-center" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <a class="menu">MENU</a><span class="navbar-toggler-icon"><i class="fas fa-bars "></i></span>
         </button>
@@ -40,107 +41,128 @@
               <a class="nav-link" href="contacto.html">CONTACT</a>
             </li>
           </ul>
+          <br>
         </div>
-        <a class="navbar-brand azul ho" href="#" data-tooltip="PERFIL"><h2><ion-icon name="person"size="large"></ion-icon></h2></a>
-
         <a class="navbar-brand azul ho" href="#"data-tooltip="LOGIN"><h2><ion-icon name="log-in" size="large"></ion-icon></h2></a>
+        <a class="navbar-brand azul ho" href="#" data-tooltip="PERFIL"><h2><ion-icon name="person"size="large"></ion-icon></h2></a>
         <a class="navbar-brand azul ho" href="#"data-tooltip="CARRITO"><h2><ion-icon name="cart"size="large"></ion-icon></h2></a>
       </nav>
 
     </header>
-    <main class="text-center">
-      <section class="verde">
-        <div class="row">
-          <div class="col-12">
-            <br><br>
-            <img src="img/profile.png" alt="Imagen Perfil">
-            <br><br><br>
-            <h2>BANNER DESLIZABLE</h2>
-            <i class="fas fa-star mt-4 starlogo"></i>
-            <br><br><br>
-            <p>SLOGAN SOBRE BANNER</p>
-            <br><br><br><br>
+    <main class="text-center col-12">
+      <section class="">
+        <br>
+        <div class="row banner d-flex col-12">
+          <div class="carousel slide align-self-center" data-interval="3000" data-pause="hover" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="contorno d-block w-100 bannerImg" src="img/Banner/NoteChilling.jpg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Disfruta en Casa</h3>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="contorno d-block w-100 bannerImg" src="img/Banner/Gamer.jpg" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Juga al maximo</h3>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="contorno d-block w-100 bannerImg" src="img/Banner/ServerRoom.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Tus necesidades estan cubiertas</h3>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section class="blanco">
-        <div class="row">
-          <div class="col-12">
-            <br><br><br><br>
-            <h2 id="ofertas">OFERTAS</h2>
-            <i class="fas fa-star mt-4 starlogo"></i>
-            <br><br>
-          </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-4 littlepadding">
-              <img src="img\Productos\Desktop\CPU\AMD Ryzen 3950x.jpg" class="sizeimg" alt="cpu">
-              <br><br>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-4 littlepadding">
-              <img src="img\Productos\Desktop\RAM\G-SKILL Trident Royal 8GBx2.png" class="sizeimg" alt="RAM">
-              <br><br>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-4 littlepadding">
-              <img src="img\Productos\Desktop\Gab\NZXT H510I Matte White.jpg" class="sizeimg" alt="gab">
-              <br><br>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-4 littlepadding">
-              <img src="img\Productos\Desktop\Mother\ASUS Rog Crosshair vIII HERO X570.png" class="sizeimg" alt="Mother">
-              <br><br>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-4 littlepadding">
-              <img src="img\Productos\Desktop\Disco\Samsung SSD 970 PRO 1TB.jpg" class="sizeimg" alt="disco">
-              <br><br>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-4 sizeimg littlepadding">
-              <img src="img\Productos\Desktop\Coolers\NZXT Liquid Cooler KRAKEN X52.jpg" class="sizeimg" alt="Coolers">
-            </div>
-            <br><br><br><br><br><br>
+      <section class="row col-12">
+        <div class="col-12">
+          <br><br><br><br>
+          <h2 id="ofertas">OFERTAS</h2>
+          <br><br>
         </div>
+        <div class="producto contorno col-12 col-sm-6 col-md-6 col-lg-4">
+          <h2>AMD Ryzen 3950x</h2>
+          <img src="img\Productos\Desktop\CPU\AMD Ryzen 3950x.jpg" class="sizeimg col-12" alt="cpu">
+          <br><br>
+        </div>
+        <div class="producto contorno col-12 col-sm-6 col-md-6 col-lg-4">
+          <h2>Trident Royal 8Gb x 2</h2>
+          <img src="img\Productos\Desktop\RAM\G-SKILL Trident Royal 8GBx2.png" class="sizeimg col-12" alt="RAM">
+          <br><br>
+        </div>
+        <div class="producto contorno col-12 col-sm-6 col-md-6 col-lg-4">
+          <h2>NZXT H510I Matte White</h2>
+          <img src="img\Productos\Desktop\Gab\NZXT H510I Matte White.jpg" class="sizeimg col-12" alt="gab">
+          <br><br>
+        </div>
+        <div class="producto contorno col-12 col-sm-6 col-md-6 col-lg-4">
+          <h2>ASUS Rog Crosshair vIII HERO X570</h2>
+          <img src="img\Productos\Desktop\Mother\ASUS Rog Crosshair vIII HERO X570.png" class="sizeimg col-12" alt="Mother">
+          <br><br>
+        </div>
+        <div class="producto contorno col-12 col-sm-6 col-md-6 col-lg-4">
+          <h2>Samsung SSD 970 PRO 1TB</h2>
+          <img src="img\Productos\Desktop\Disco\Samsung SSD 970 PRO 1TB.jpg" class="sizeimg col-12" alt="disco">
+          <br><br>
+        </div>
+        <div class="producto contorno col-12 col-sm-6 col-md-6 col-lg-4 sizeimg">
+          <h2>NZXT Liquid Cooler KRAKEN X52</h2>
+          <img src="img\Productos\Desktop\Coolers\NZXT Liquid Cooler KRAKEN X52.jpg" class="sizeimg col-12" alt="Coolers">
+        </div>
+        <br><br><br><br><br><br>
       </section>
-      <section class="azul">
-        <div class="row">
-          <div class="col-12 col-12 col-sm-4">
-            <br><br><br><br>
-            <h2>DIRECCION</h2>
-            <br><br>
-            <p>direccioooooooooooon</p>
-          </div>
-          <div class="col-12 col-12 col-sm-4">
-            <br><br><br><br>
-            <h2>AROUND THE WEB</h2>
-            <br><br>
-            <i class="fab fa-facebook-f  social" href="https://facebook.com"></i>
-            <i class="fab fa-google-plus-g social" href="https://google.com"></i>
-            <i class="fab fa-twitter social" href="https://twitter.com"></i>
-            <i class="fab fa-instagram social" href="https://instagram.com"></i>
-            <i class="fas fa-basketball-ball social" href=""></i>
-            <br><br>
-          </div>
-          <div class="col-12 col-12 col-sm-4">
-            <br><br><br><br>
-            <h2>ACERCA DE NOSOTROS</h2>
-            <br><br>
-            <p> Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo </p>
-            <br><br><br><br>
-          </div>
+      <section class="row col-12">
+        <div class="col-12 col-12 col-sm-4">
+          <br><br><br><br>
+          <h2>DIRECCION</h2>
+          <br><br>
+          <p>direccioooooooooooon</p>
+        </div>
+        <div class="col-12 col-sm-4">
+          <br><br><br><br>
+          <h2>Redes Sociales</h2>
+          <br><br>
+
+          <!-- pasar estos iconos a ionicons -->
+          <i class="fab fa-facebook-f  social" href="https://facebook.com"></i>
+          <i class="fab fa-google-plus-g social" href="https://google.com"></i>
+          <i class="fab fa-twitter social" href="https://twitter.com"></i>
+          <i class="fab fa-instagram social" href="https://instagram.com"></i>
+          <i class="fas fa-basketball-ball social" href=""></i>
+          <br><br>
+        </div>
+        <div class="col-12 col-sm-4">
+          <br><br><br><br>
+          <h2>ACERCA DE NOSOTROS</h2>
+          <br><br>
+          <p> Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo Parrafo </p>
+          <br><br><br><br>
         </div>
       </section>
     </main>
-    <footer class="footer">
-			<ul>
-				<li><a href="#">home</a></li>
-				<li><a href="#">quienes</a></li>
-				<li><a href="#">servicios</a></li>
-				<li><a href="#">portfolio</a></li>
-				<li><a href="#">sucursales</a></li>
-				<li><a href="#">contacto</a></li>
-			</ul>
-		</footer>
+    <footer class="footer row col-12  d-flex justify-content-center ">
+      <ul class="col-12 d-flex justify-content-around">
+        <li><a class="d-flex col-2" href="#">Home</a></li>
+        <li><a class="d-flex col-2" href="#">Contacto</a></li>
+        <li><a class="d-flex col-2" href="#">Registro</a></li>
+        <li><a class="d-flex col-2" href="#">Login</a></li>
+        <li><a class="d-flex col-2" href="#">Ayuda</a></li>
+      </ul>
+      <br><br>
+    </footer>
 
   </div>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>
