@@ -48,6 +48,15 @@ body{
   background-repeat:repeat;
 
 }
+.noPadding{
+  padding: 0px;
+}
+.noMargin{
+  margin: 0px;
+}
+.marginBottom{
+  margin-bottom: 4vh;
+}
 .banner{
   margin: 0px;
 }
