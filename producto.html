@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Orbitron%7CPlay%7CQuicksand&display=swap" rel="stylesheet">
-    <title>Producto</title>
-  </head>
-  <body>
-
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron%7CPlay%7CQuicksand&display=swap" rel="stylesheet">
+  <title>Producto</title>
+</head>
+<body>
+  <div class="container-fluid">
     <header class="fondo-header">
       <div class="logo-container">
         <img src="img/logo.png" class="img-fluid" alt="Responsive image">
       </div>
-               <!-- Small Menu -->
-      <div class="smMenu d-md-none">
+      <!-- Small Menu -->
+      <div class="smMenu d-none d-md-block">
         <div class="d-flex justify-content-center">
-          <h1 class= "d-inline-flex text-uppercase">DH <br>Servicio Tecnico</h1>
+          <h1 class= "d-inline-flex text-uppercase contornoFondo">DH <br>Servicio Tecnico</h1>
         </div>
         <nav class="navbar navbar-expand-lg  d-flex d-md-none align-items-center justify-content-between">
           <a class="navbar-brand col-12" href="#"></a>
@@ -30,7 +30,7 @@
                 <a class="nav-link menuLinks" href="producto.html">Productos <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item text-center">
-                <a class="nav-link menuLinks" href="#NavServTecn">Servicio Tecnico <span class="sr-only">(current)</span></a>
+                <a class="nav-link menuLinks" href="servicio.html">Servicio Tecnico <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item text-center">
                 <a class="nav-link menuLinks" href="registro.html">Registro <span class="sr-only">(current)</span></a>
@@ -48,14 +48,14 @@
           <a class="navbar-brand contornoVerde circulo usuarioButton" href="usuario.html" data-tooltip="PERFIL"><h2><ion-icon name="person"size="large"></ion-icon></h2></a>
           <a class="navbar-brand contornoVerde circulo carritoButton" href="carrito.html"data-tooltip="CARRITO"><h2><ion-icon name="cart"size="large"></ion-icon></h2></a>
         </div>
-                  <!-- Medium Menu  -->
+        <!-- Medium Menu  -->
         <div class="mdMenu col-12 row d-none d-md-flex">
           <ul class="ml-auto d-flex justify-content-around col-md-8">
-              <li class="nav-item text-center col-md-2">
+            <li class="nav-item text-center col-md-2">
               <a class="nav-link" href="producto.html">Productos <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item text-center col-md-3">
-              <a class="nav-link" href="#NavServTecn">Servicio Tecnico <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="servicio.html">Servicio Tecnico <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item text-center col-md-2">
               <a class="nav-link" href="registro.html">Registro <span class="sr-only">(current)</span></a>
@@ -72,62 +72,36 @@
           <a class="navbar-brand noPadding-Margin carritoButtonMD col-md-1" href="carrito.html"data-tooltip="CARRITO"><ion-icon name="cart"size="large"></ion-icon></a>
         </div>
       </header>
-
-    <main>
+      <main>
         <div class="imagen">
           <br>
           <h3>Disco Solido</h3>
           <img src="img/Productos/Desktop/Disco/Ssd-Kingston-A400-240gb.jpg" class="img-fluid" alt="Responsive image">
           <h4>$500,00</h4>
-​
+          ​
           <button type="button" class="btn btn-primary btn-lg">Comprar</button>
-​
+          ​
           <h4>Descripcion producto</h4>
           <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum.</p>
-​
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.</p>
+          </div>
+          ​    </main>
+          <footer class="footer row col-12  d-flex justify-content-center ">
+            <ul class="col-12 d-flex justify-content-around">
+              <li><a class="d-flex col-2" href="index.html">Home</a></li>
+              <li><a class="d-flex col-2" href="contacto.html">Contacto</a></li>
+              <li><a class="d-flex col-2" href="FAQ.html">Ayuda</a></li>
+            </ul>
+            <br><br>
+          </footer>
         </div>
-​
-​
-​    </main>
-​
-        <footer class="footer row col-12  d-flex justify-content-center ">
-          <ul class="col-12 d-flex justify-content-around">
-            <li><a class="d-flex col-2" href="#">Home</a></li>
-            <li><a class="d-flex col-2" href="contacto.html">Contacto</a></li>
-            <li><a class="d-flex col-2" href="FAQ.html">Ayuda</a></li>
-          </ul>
-          <br><br>
-        </footer>
-
-
-
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-    </main>
-
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
-</html>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      </body>
+      </html>
