@@ -18,9 +18,10 @@ expresionEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@
 nombre.onchange = function (){
   if (this.value.length => 30 && this.lenght != ""){
     alert("Tu nombre debe de ser más corto")
-
-  event.preventDefault();} else if (this.value != checkNum) {
+    event.preventDefault();
+  }else if (this.value != checkNum) {
     alert(" No puedes incluir numeros en tu nombre")
+    event.preventDefault();
   }
 }
 apellido.onchange.value = function (){
@@ -30,6 +31,7 @@ apellido.onchange.value = function (){
   }
   else if (this != checkNum) {
     alert(" No puedes incluir numeros en tu apellido")
+    event.preventDefault();
   }
 }
 email.onchange.value = function (){
@@ -39,6 +41,7 @@ email.onchange.value = function (){
   }
   else if (expresionEmail.test(this)) {
     alert(" Tu email tiene un formato invalido ")
+    event.preventDefault();
   }
 }
 telefono.onchange.value = function (){
@@ -48,6 +51,7 @@ telefono.onchange.value = function (){
   }
   else if (checkNum.Test(this)) {
     alert(" Tu teléfono debe contener solamente numeros")
+    event.preventDefault();
   }
 }
 consulta.onchange.value = function (){
@@ -64,6 +68,7 @@ dni.onchange.value = function (){
   }
   else if (checkNum.Test(this)) {
     alert(" Tu DNI o CUIT debe contener solamente numeros ")
+    event.preventDefault();
   }
 
 }
