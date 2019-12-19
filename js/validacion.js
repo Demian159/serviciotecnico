@@ -2,30 +2,32 @@ window.onload = function (){
 
 var nombre, apellido, email, telefono, consulta, dni, contraseña, repetirContraseña, checkPass, checkNum, expresionEmail;
 
-nombre = document.querySelector("[name=Nombre]");
-apellido = document.querySelector("[name=Apellido]");
-email = document.querySelector("[name=Email]");
-telefono = document.querySelector("[name=Telefono]");
-consulta = document.querySelector("[name=Consulta]");
-dni = document.querySelector("[name=DNI]");
-contraseña = document.querySelector("[name=Contraseña]");
-repetirContraseña = document.querySelector("[name=RepetirContraseña]");
+nombre = document.querySelector("input[name=Nombre]");
+console.log(nombre);
+apellido = document.querySelector("input[name=Apellido]");
+email = document.querySelector("input[name=Email]");
+telefono = document.querySelector("input[name=Telefono]");
+consulta = document.querySelector("input[name=Consulta]");
+dni = document.querySelector("input[name=DNI]");
+contraseña = document.querySelector("input[name=Contraseña]");
+repetirContraseña = document.querySelector("input[name=RepetirContraseña]");
 checkNum = /^([0-9])*$/;
 checkPass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/;
 expresionEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
 
 nombre.onchange = function (){
-  if (this.value.length => 30 && this.lenght != ""){
-    alert("Tu nombre debe de ser más corto")
+  console.log("estoy escribiendo");
+  if (this.value.length >= 30 && this.lenght != ""){
+    alert("Tu nombre debe de ser más corto");
     event.preventDefault();
   }else if (this.value != checkNum) {
     alert(" No puedes incluir numeros en tu nombre")
     event.preventDefault();
   }
 }
-apellido.onchange.value = function (){
-  if (this.lenght => 30 && this.lenght != ""){
+apellido.onchange = function (){
+  if (this.lenght >= 30 && this.lenght != ""){
     alert("Tu apellido debe de ser más corto")
     event.preventDefault();
   }
@@ -34,8 +36,8 @@ apellido.onchange.value = function (){
     event.preventDefault();
   }
 }
-email.onchange.value = function (){
-  if (this.lenght => 100 && this.lenght != ""){
+email.onchange = function (){
+  if (this.lenght >= 100 && this.lenght != ""){
     alert("Tu email debe de ser más corto")
     event.preventDefault();
   }
@@ -44,8 +46,8 @@ email.onchange.value = function (){
     event.preventDefault();
   }
 }
-telefono.onchange.value = function (){
-  if (this.lenght => 30 && this.lenght != ""){
+telefono.onchange = function (){
+  if (this.lenght >= 30 && this.lenght != ""){
     alert("Tu teléfono debe de ser más corto")
     event.preventDefault();
   }
@@ -54,15 +56,24 @@ telefono.onchange.value = function (){
     event.preventDefault();
   }
 }
-consulta.onchange.value = function (){
-  if (this.lenght => 200 && this.lenght != ""){
-    alert("Tu consulta es muy extensa")
-    event.preventDefault();
-  }
+try{
+  consulta.onchange = function (){
 
+    if (this.lenght >= 200 && this.lenght != ""){
+      alert("Tu consulta es muy extensa")
+      event.preventDefault();
+    }
+
+
+
+
+  }
 }
-dni.onchange.value = function (){
-  if (this.lenght => 11 && this.lenght != ""){
+catch(error){
+  console.log("Consulta no existe en este documento: " + error.message);
+}
+dni.onchange = function (){
+  if (this.lenght >= 11 && this.lenght != ""){
     alert("Tu CUIT debe de ser más corto")
     event.preventDefault();
   }
@@ -72,14 +83,14 @@ dni.onchange.value = function (){
   }
 
 }
-contraseña.onchange.value = function (){
+contraseña.onchange = function (){
   if (checkPass.test(this)){
     alert("La contraseña debe contener: \n Minimo 8 caracteres \n Maximo 15 \n Al menos una letra mayúscula \n Al menos una letra minucula \n Al menos un dígito \n No espacios en blanco \n Al menos 1 caracter especial");
     event.preventDefault();
   }
 
 }
-repetirContraseña.onchange.value = function (){
+repetirContraseña.onchange = function (){
   if (this === contraseña.value){
     alert("Debes repetir correctamente la contraseña")
     event.preventDefault();
